@@ -1,0 +1,2116 @@
+[
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "3185235c047eaf647ced36577d176e2c411587b0",
+          "file": "src/it/java/org/owasp/webgoat/test.java",
+          "email": "Ervin Zhao \u003cervin.zhao@domain.com.au\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-11-12 22:27:02 +0000",
+          "line": 13
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 10,
+    "DetectorName": "JDBC",
+    "DetectorDescription": "JDBC (Java Database Connectivity) is an API for connecting and executing queries with databases. JDBC connection strings can be used to access and manipulate databases.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationError": "dial tcp [::1]:3306: connect: connection refused",
+    "VerificationFromCache": false,
+    "Raw": "jdbc:mysql://localhost:3306/mydatabase",
+    "RawV2": "",
+    "Redacted": "jdbc:mysql://localhost:3306/mydatabase",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "5f60335e320439630b44bfe1400af0b2c3c21e2c",
+          "file": ".github/workflows/sonarcloud.yml",
+          "email": "Skander Hannachi \u003c71103395+booskander@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-11-04 18:37:15 +0000",
+          "line": 50
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 767,
+    "DetectorName": "SonarCloud",
+    "DetectorDescription": "SonarCloud is a cloud-based code quality and security service. SonarCloud tokens can be used to access project analysis and quality reports.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "4006f663ecaf1f8093e8e4abb9227f6041f52216",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "a28529c1194e9d6dd009c8acada6c747d5f23862",
+          "file": ".github/workflows/sonarqube.yml",
+          "email": "zhemein \u003czhemein@gmail.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-05-26 04:58:58 +0000",
+          "line": 48
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 767,
+    "DetectorName": "SonarCloud",
+    "DetectorDescription": "SonarCloud is a cloud-based code quality and security service. SonarCloud tokens can be used to access project analysis and quality reports.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "7295e71c9583053f5bf40e9d4068a0c974603ec8",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "1533e56146aa8a15dc418bd872d269e321b003be",
+          "file": "test secret",
+          "email": "Ties van de Ven \u003c47591489+tiesvandeven@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-06-03 14:14:17 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 8,
+    "DetectorName": "Github",
+    "DetectorDescription": "GitHub is a platform for version control and collaboration. Personal access tokens (PATs) can be used to access and modify repositories and other resources.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "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",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": {
+      "rotation_guide": "https://howtorotate.com/docs/tutorials/github/",
+      "version": "2"
+    },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "a74475f7442f25a033eb2f491a449a172eff0314",
+          "file": "test secret",
+          "email": "Ties van de Ven \u003c47591489+tiesvandeven@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-06-03 14:15:00 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 8,
+    "DetectorName": "Github",
+    "DetectorDescription": "GitHub is a platform for version control and collaboration. Personal access tokens (PATs) can be used to access and modify repositories and other resources.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "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",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": {
+      "rotation_guide": "https://howtorotate.com/docs/tutorials/github/",
+      "version": "2"
+    },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "92e440f7a291ebd1d45af8898b60913ea3d2bdd2",
+          "file": ".github/workflows/semgrep-test.yml",
+          "email": "huximp \u003cham_gtba@hotmail.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-07-08 14:14:34 +0000",
+          "line": 40
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 8,
+    "DetectorName": "Github",
+    "DetectorDescription": "GitHub is a platform for version control and collaboration. Personal access tokens (PATs) can be used to access and modify repositories and other resources.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "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",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": {
+      "rotation_guide": "https://howtorotate.com/docs/tutorials/github/",
+      "version": "2"
+    },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "83e8cbcf9ce52f77eb5d64cbfd5fd862d7cb2c90",
+          "file": "README.md",
+          "email": "Committer \u003c4544726+bradmsmith@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-09-27 19:44:48 +0000",
+          "line": 169
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 9,
+    "DetectorName": "Gitlab",
+    "DetectorDescription": "GitLab is a web-based DevOps lifecycle tool that provides a Git repository manager providing wiki, issue-tracking, and CI/CD pipeline features. GitLab Personal Access Tokens (PATs) can be used to authenticate and access GitLab resources.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "glpat-e31Y_mAqvRTbZBXTZyFf",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": {
+      "rotation_guide": "https://howtorotate.com/docs/tutorials/gitlab/",
+      "version": "2"
+    },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "cd6e7b3b86cc195510c350852f6fd88586012c8e",
+          "file": "connectdb.java",
+          "email": "rajsai72 \u003c72629926+rajsai72@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-09-11 16:37:00 +0000",
+          "line": 10
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 10,
+    "DetectorName": "JDBC",
+    "DetectorDescription": "JDBC (Java Database Connectivity) is an API for connecting and executing queries with databases. JDBC connection strings can be used to access and manipulate databases.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "jdbc:sqlserver://localhost.database.windows.net:1433;",
+    "RawV2": "",
+    "Redacted": "jdbc:sqlserver://localhost.database.windows.net:1433;",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "83e8cbcf9ce52f77eb5d64cbfd5fd862d7cb2c90",
+          "file": "README.md",
+          "email": "Committer \u003c4544726+bradmsmith@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-09-27 19:44:48 +0000",
+          "line": 164
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIAABCDCFGIJKLMMOP1",
+    "RawV2": "AKIAABCDCFGIJKLMMOP1:tQtSurrh+N3zqFDPEPZ95050c+GGQs+Xx1AF/wVc",
+    "Redacted": "AKIAABCDCFGIJKLMMOP1",
+    "ExtraData": { "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "ef74dab7386ea66bcf2057874307c5bd46e58055",
+          "file": "“.aws/credentials”",
+          "email": "amineXguesmi \u003c91613501+amineXguesmi@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-24 21:10:18 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "ef74dab7386ea66bcf2057874307c5bd46e58055",
+          "file": "“.aws/credentials”",
+          "email": "amineXguesmi \u003c91613501+amineXguesmi@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-24 21:10:18 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "226dc3580bdd32136d0a96a91dac60d296f829e5",
+          "file": ".aws/credentials",
+          "email": "ines besrour \u003c87935896+ines-besrour@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 17:51:31 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "226dc3580bdd32136d0a96a91dac60d296f829e5",
+          "file": ".aws/credentials",
+          "email": "ines besrour \u003c87935896+ines-besrour@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 17:51:31 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "f834641f609c90c210200a0173c394431b3e60b0",
+          "file": ".aws/credentails",
+          "email": "Adam Fendri \u003cadamfendri@insat.u-carthage.tn\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 21:03:54 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "f834641f609c90c210200a0173c394431b3e60b0",
+          "file": ".aws/credentails",
+          "email": "Adam Fendri \u003cadamfendri@insat.u-carthage.tn\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 21:03:54 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "62e4f68092d53f12cf5de2361b8e8659d8533e51",
+          "file": ".aws/credentials",
+          "email": "arwaouriemmi \u003c98884775+arwaouriemmi@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-05 13:08:36 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "62e4f68092d53f12cf5de2361b8e8659d8533e51",
+          "file": ".aws/credentials",
+          "email": "arwaouriemmi \u003c98884775+arwaouriemmi@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-05 13:08:36 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "3458faa7675f48cd6725790c301901d44828a35e",
+          "file": ".aws/credentials",
+          "email": "Ahmed_Frikha \u003c94226059+AhmedFrikhaa@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 17:15:01 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "3458faa7675f48cd6725790c301901d44828a35e",
+          "file": ".aws/credentials",
+          "email": "Ahmed_Frikha \u003c94226059+AhmedFrikhaa@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 17:15:01 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "027ad98076d5c1a5a8bc6752db9eb807e02896b9",
+          "file": ".aws/credentials",
+          "email": "Dhouib Mohamed \u003c91623648+Dhouib-Mohamed@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-26 19:08:10 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "027ad98076d5c1a5a8bc6752db9eb807e02896b9",
+          "file": ".aws/credentials",
+          "email": "Dhouib Mohamed \u003c91623648+Dhouib-Mohamed@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-26 19:08:10 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "ab6fa7e374648a314315388636f361532fa45409",
+          "file": ".aws/credentials",
+          "email": "sofienazzabi2 \u003c140543542+sofienazzabi2@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-27 22:04:35 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "4653c764bd538a217795d4b78ad62e2cf2faccca",
+          "file": ".aws/credentials",
+          "email": "Yassine Belkhadem \u003cyassinebk23@gmail.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 19:47:58 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "4653c764bd538a217795d4b78ad62e2cf2faccca",
+          "file": ".aws/credentials",
+          "email": "Yassine Belkhadem \u003cyassinebk23@gmail.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 19:47:58 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "ab6fa7e374648a314315388636f361532fa45409",
+          "file": ".aws/credentials",
+          "email": "sofienazzabi2 \u003c140543542+sofienazzabi2@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-27 22:04:35 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "4221903beac420f0613e1655a44ec50aa67e3fd9",
+          "file": ".aws/credentials",
+          "email": "Emna Gaidi \u003c94928444+EmnaGaidi@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-10 12:46:55 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "512f2b2619d7494cbe8be243abde37e4412315f6",
+          "file": ".aws/credentials",
+          "email": "Mohamed Karam Hassoun \u003c93882105+KaramHassoun1@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 15:36:07 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "512f2b2619d7494cbe8be243abde37e4412315f6",
+          "file": ".aws/credentials",
+          "email": "Mohamed Karam Hassoun \u003c93882105+KaramHassoun1@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-28 15:36:07 +0000",
+          "line": 5
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3TWKEGEXEBKI5DOB",
+    "RawV2": "AKIA3TWKEGEXEBKI5DOB:u8HpotxCpj9uhYBd4eUJOo+pwmk0zfpXViG8/bvh",
+    "Redacted": "AKIA3TWKEGEXEBKI5DOB",
+    "ExtraData": { "account": "798214074670", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "4221903beac420f0613e1655a44ec50aa67e3fd9",
+          "file": ".aws/credentials",
+          "email": "Emna Gaidi \u003c94928444+EmnaGaidi@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2024-04-10 12:46:55 +0000",
+          "line": 2
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 2,
+    "DetectorName": "AWS",
+    "DetectorDescription": "AWS (Amazon Web Services) is a comprehensive cloud computing platform offering a wide range of on-demand services like computing power, storage, databases. API keys for AWS can have varying amount of access to these services depending on the IAM policy attached.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "AKIA3GEXDNW3Q55TWKEA",
+    "RawV2": "AKIA3GEXDNW3Q55TWKEA:34FPwSIlfbBrbd3S3EX2xMC5009n4rGL/6zo3xi0",
+    "Redacted": "AKIA3GEXDNW3Q55TWKEA",
+    "ExtraData": { "account": "769116040631", "resource_type": "Access key" },
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/directorylistv1-release-7.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 119
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "d987b9ffabc3f5fb80256cf4005d2257",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/directorylistv1-release-7.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1168
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "d987b9ffabc3f5fb80256cf4005d2257",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/directorylistv1-release-7.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 543
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 68,
+    "DetectorName": "FastlyPersonalToken",
+    "DetectorDescription": "Fastly is a content delivery network (CDN) and cloud service provider. Fastly personal tokens can be used to authenticate API requests to Fastly services.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "tucows_194832_Ulead_GIF_Animator",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/directorylistv1-release-7.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 582
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "ecba4c8e0c47b4732aab96cd486f3578",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "f0b59b89425f2a4fbb0661c1d857a6e3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "4b634083d497ce3dda44ef46227b385a",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "5f3748c1ba422be59ec0c2f80079e671",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "5dec7d86545dff4ce3fabcab3648266a",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "454c27c5ac7eb95d19e71dee2cfdc1f3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "0c219c906b49de0657bbd01f0f8b420c",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "897ae97b9fed2c3f7896a268cc621ef3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "5f3748c1ba422be59ec0c2f80079e671",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "0c219c906b49de0657bbd01f0f8b420c",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "f0b59b89425f2a4fbb0661c1d857a6e3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "0c219c906b49de0657bbd01f0f8b420c",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "0c219c906b49de0657bbd01f0f8b420c",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "5dec7d86545dff4ce3fabcab3648266a",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "897ae97b9fed2c3f7896a268cc621ef3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "d47b832e47364a498a74b95bc2b9e9e1",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "5f3748c1ba422be59ec0c2f80079e671",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "5f3748c1ba422be59ec0c2f80079e671",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "d47b832e47364a498a74b95bc2b9e9e1",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "4b634083d497ce3dda44ef46227b385a",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "454c27c5ac7eb95d19e71dee2cfdc1f3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "897ae97b9fed2c3f7896a268cc621ef3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "6151209836f9911ae58cd386532ebde3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": true,
+    "Raw": "897ae97b9fed2c3f7896a268cc621ef3",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "1ca448a79cc69664444e40bc7212b499",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "2b6da0a3861fe2e6557d70c0fd738698",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "2b6da0a3861fe2e6557d70c0fd738698",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "ef8e19544b1592ed65bc84cb85ef2f6f",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "7c3230bf621c9916c7b48b8ae25c35fc8b0125d8",
+          "file": "plugin/webdriverlinux-release-64.zap",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:57:52 +0000",
+          "line": 1
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 1002,
+    "DetectorName": "Box",
+    "DetectorDescription": "Box is a service offering various service for secure collaboration, content management, and workflow. Box token can be used to access and interact with this data.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationFromCache": false,
+    "Raw": "7ce8b05b2b0d519b3407524dbcc452f7",
+    "RawV2": "",
+    "Redacted": "",
+    "ExtraData": null,
+    "StructuredData": null
+  },
+  {
+    "SourceMetadata": {
+      "Data": {
+        "Git": {
+          "commit": "85627298ada5b4f84f16401e5d5e61f18833f5ad",
+          "file": "zap/db/db.properties",
+          "email": "lisa2000love \u003c50256598+lisa2000love@users.noreply.github.com\u003e",
+          "repository": "https://github.com/WebGoat/WebGoat",
+          "timestamp": "2023-12-27 11:52:12 +0000",
+          "line": 18
+        }
+      }
+    },
+    "SourceID": 1,
+    "SourceType": 16,
+    "SourceName": "trufflehog - git",
+    "DetectorType": 10,
+    "DetectorName": "JDBC",
+    "DetectorDescription": "JDBC (Java Database Connectivity) is an API for connecting and executing queries with databases. JDBC connection strings can be used to access and manipulate databases.",
+    "DecoderName": "PLAIN",
+    "Verified": false,
+    "VerificationError": "dial tcp [::1]:3306: connect: connection refused",
+    "VerificationFromCache": false,
+    "Raw": "jdbc:mysql://localhost/zaproxy",
+    "RawV2": "",
+    "Redacted": "jdbc:mysql://localhost/zaproxy",
+    "ExtraData": null,
+    "StructuredData": null
+  }
+]
