@@ -1,0 +1,966 @@
+[
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 219,
+        "vuln_column": 6029,
+        "vuln_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_description": "cookie set without httponly flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "fd226e1a3bc204490dc08dfcb7f10b055fe5a6c3f3040b541d260a290aef077d",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 219,
+        "vuln_column": 6029,
+        "vuln_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_description": "cookie set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "fd226e1a3bc204490dc08dfcb7f10b055fe5a6c3f3040b541d260a290aef077d",
+        "vuln_type": "custom"
+    },
+    {
+        "source_name": [
+            "$_COOKIE[0]"
+        ],
+        "source_line": [
+            103
+        ],
+        "source_column": [
+            3470
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "session_id",
+        "sink_line": 103,
+        "sink_column": 3459,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "session_fixation",
+        "vuln_cwe": "CWE_384",
+        "vuln_id": "ec6ee416478944a812bae6a06dbdab4d033829cbedc44933d4f3b453ba541057",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            371,
+            368
+        ],
+        "source_column": [
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "04ee17e0d300fe854d35c2018d9a407ff8cab7d26615633912a972c6d98aff00",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "6333f281704823a7621e6abeb11ff19c858a1577524b9da78f9866b1ba148c80",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            195
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/brute\/source\/low.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 287,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/brute\/source\/low.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "99d33fde00a816c1aa5dece012cea77edbca45c9b564f5951c1ebefcaf2c7190",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9e03e1f9ec67ddca147461e2a44d64142bd4fb882ddf389e0676cb7723132ed6",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "fa2fb38e4e1feb78b49cef48ccc862e6639733ce25b1bbbee58c2da596a03061",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "46943e975847f8d019b5621d562517a348026c69e3c0821a5e2a899d3a66b98c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$callback"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            109
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/csp\/source\/jsonp.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 12,
+        "sink_column": 204,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/csp\/source\/jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9b4318227b9f96c7d306a95ad943c30ebef80f5ebe6a6e48be4b75d6bd8b2b78",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]"
+        ],
+        "source_line": [
+            505
+        ],
+        "source_column": [
+            15361
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 485,
+        "sink_column": 14945,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "2451bb8021e785691070c9b36df031940fb8178b058e6adbf2c58f2f541c4960",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            63
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/low.php"
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 10,
+        "sink_column": 218,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/low.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "03efd13f6d1488daa46088b679a4f8511c2cfefbee91d72d7c5f23f0da5808be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            63
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/low.php"
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 14,
+        "sink_column": 286,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/low.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "03efd13f6d1488daa46088b679a4f8511c2cfefbee91d72d7c5f23f0da5808be",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/medium.php"
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 19,
+        "sink_column": 444,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/medium.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "de45727917a0d7facfa08f3defd05c24033e81eec4251e36e30b8781886c9943",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/medium.php"
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 23,
+        "sink_column": 512,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/medium.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "de45727917a0d7facfa08f3defd05c24033e81eec4251e36e30b8781886c9943",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            349
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/high.php"
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 26,
+        "sink_column": 555,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/high.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "20cd29460f15310ab36a3e3f49c1fa1e8cc789a0f524ed42faa5e6c05766a08b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            349
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/high.php"
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 30,
+        "sink_column": 623,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/exec\/source\/high.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "20cd29460f15310ab36a3e3f49c1fa1e8cc789a0f524ed42faa5e6c05766a08b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "df1a9566e7421512b41e421a1e5dc88fb5c09dcd22f408616846ebdf1fb8bf0e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file",
+            "$file",
+            "$file",
+            "$file"
+        ],
+        "source_line": [
+            4,
+            8,
+            4,
+            4
+        ],
+        "source_column": [
+            41,
+            157,
+            41,
+            41
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/fi\/source\/low.php",
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/fi\/source\/medium.php",
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/fi\/source\/high.php",
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/fi\/source\/impossible.php"
+        ],
+        "sink_name": "include",
+        "sink_line": 36,
+        "sink_column": 883,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/fi\/index.php",
+        "vuln_name": "file_inclusion",
+        "vuln_cwe": "CWE_98",
+        "vuln_id": "f78e608ee7a1ce0ff39d4ff52b2f4b7eeb0c937c433faf426f7d638ae124612f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"redirect\"]"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            163
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/open_redirect\/source\/high.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 5,
+        "sink_column": 140,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/open_redirect\/source\/high.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "cb400dcec4da9cbe3ffaeb79ad73eaf36eaa13f03ba85cc2be361e386f446382",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"redirect\"]"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            105
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/open_redirect\/source\/low.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 4,
+        "sink_column": 82,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/open_redirect\/source\/low.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "de8b485c9719fd58cd7d49b3d2ae2f6ed224505ee58275f91286d849cffecd23",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"redirect\"]"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            274
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/open_redirect\/source\/medium.php"
+        ],
+        "sink_name": "header",
+        "sink_line": 11,
+        "sink_column": 251,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/open_redirect\/source\/medium.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "64a479c9ea34cbe772b0d2e20a73857b9a99035566519b43a3aa7be97859213d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            164
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/sqli\/source\/low.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 11,
+        "sink_column": 254,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/sqli\/source\/low.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0b4fc5f8a82ff86248be6c81ad1c7ee0e21f20ceba529c86f09fcb61c633d092",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            206
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/sqli\/source\/medium.php"
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 12,
+        "sink_column": 294,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/sqli\/source\/medium.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "0eae4aa72e8b99945230dcfcdbec4df93b5fb6507f71571f2c098dab55b83307",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ce3534813e5c69af804c4a9b9c751e6ee89798859b2dc3c65ebcefab5780041",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]"
+        ],
+        "source_line": [
+            505
+        ],
+        "source_column": [
+            15361
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 485,
+        "sink_column": 14945,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "51a7faa5d2b6119f9aceb50367387ce8a70ea81aecc1594e5a3465f7916b8802",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            400
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 20,
+        "sink_column": 550,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "365875d421ccd39c4511eeefef9a929bd6d028cb960863e2460721ff86fad05f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            550
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php"
+        ],
+        "sink_name": "eval",
+        "sink_line": 20,
+        "sink_column": 537,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php",
+        "vuln_name": "eval code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "faf87b2db5b3834cb40765932a1ae3a5e1a4a46fef8c1644205b456cab8f2200",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id",
+            "$locale"
+        ],
+        "source_line": [
+            14,
+            16
+        ],
+        "source_column": [
+            400,
+            464
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php",
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 22,
+        "sink_column": 674,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "da3363920a99d017dd6a99bd96f242b319df6df1c28c2489f55e7746139467ba",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            22
+        ],
+        "source_column": [
+            674
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php"
+        ],
+        "sink_name": "eval",
+        "sink_line": 22,
+        "sink_column": 661,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_help.php",
+        "vuln_name": "eval code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "faf87b2db5b3834cb40765932a1ae3a5e1a4a46fef8c1644205b456cab8f2200",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id",
+            "$security"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            361,
+            390
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source.php",
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 60,
+        "sink_column": 1295,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "2a1edb34521072520638039ce3434725ee81d79c41c4c0912db09793c3737038",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id",
+            "$security"
+        ],
+        "source_line": [
+            12,
+            13
+        ],
+        "source_column": [
+            361,
+            390
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source.php",
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 65,
+        "sink_column": 1591,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "2a1edb34521072520638039ce3434725ee81d79c41c4c0912db09793c3737038",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]"
+        ],
+        "source_line": [
+            505
+        ],
+        "source_column": [
+            15361
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 485,
+        "sink_column": 14945,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "efcdf4aa53de932e1a413ba8f8fc82d4c3707d80884c92c4da4c768bba5a0ca1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            320
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 14,
+        "sink_column": 356,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "dfb8541908d863d210156cb311b80bf9a7ee48db4905849d1dfb668ca5ce4be1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            320
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 18,
+        "sink_column": 536,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "dfb8541908d863d210156cb311b80bf9a7ee48db4905849d1dfb668ca5ce4be1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            320
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 22,
+        "sink_column": 720,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "dfb8541908d863d210156cb311b80bf9a7ee48db4905849d1dfb668ca5ce4be1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$id"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            320
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php"
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 26,
+        "sink_column": 905,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/view_source_all.php",
+        "vuln_name": "path_traversal",
+        "vuln_cwe": "CWE_22",
+        "vuln_id": "dfb8541908d863d210156cb311b80bf9a7ee48db4905849d1dfb668ca5ce4be1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]"
+        ],
+        "source_line": [
+            505
+        ],
+        "source_column": [
+            15361
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 485,
+        "sink_column": 14945,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "17d8f9e586c456ec020812f9b9cc1816a51f485348ea2eca74a28c18fa74adc2",
+        "vuln_type": "taint-style"
+    },
+    {
+        "vuln_rule": "MUST_NOT_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 11,
+        "vuln_column": 240,
+        "vuln_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/weak_id\/source\/low.php",
+        "vuln_description": "cookie options set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "c7026e10c644f72fccabaa5e0345709e8d1410373fa8bd00e49bb56553a537c2",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_NOT_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 11,
+        "vuln_column": 240,
+        "vuln_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/weak_id\/source\/low.php",
+        "vuln_description": "cookie options set without httponly flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "c7026e10c644f72fccabaa5e0345709e8d1410373fa8bd00e49bb56553a537c2",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 11,
+        "vuln_column": 265,
+        "vuln_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/weak_id\/source\/high.php",
+        "vuln_description": "cookie set without httponly flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "917e37ebc4fb52e99cb8cebd5df3a7f4a95446a20f3b70b58a167b4be8e2148a",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 11,
+        "vuln_column": 265,
+        "vuln_file": "\/home\/kali\/vuln-app\/DVWA\/vulnerabilities\/weak_id\/source\/high.php",
+        "vuln_description": "cookie set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "917e37ebc4fb52e99cb8cebd5df3a7f4a95446a20f3b70b58a167b4be8e2148a",
+        "vuln_type": "custom"
+    },
+    {
+        "source_name": [
+            "$pPage[\"body\"]",
+            "$systemInfoHtml",
+            "$systemInfoHtml"
+        ],
+        "source_line": [
+            415,
+            371,
+            368
+        ],
+        "source_column": [
+            13515,
+            12344,
+            12213
+        ],
+        "source_file": [
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+            "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "sink_name": "echo",
+        "sink_line": 379,
+        "sink_column": 12711,
+        "sink_file": "\/home\/kali\/vuln-app\/DVWA\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f22c37e47ebebfa515194fda5d4c98e62ea2ef59ba33ecf4cbcb7b4f9e847b0c",
+        "vuln_type": "taint-style"
+    }
+]
