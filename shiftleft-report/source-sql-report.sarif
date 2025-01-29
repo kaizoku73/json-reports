@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "SQL Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "SQL Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "/tmp/.mount_sastscGf5SBR/opt/pmd-bin/bin/run.sh",
+            "pmd",
+            "--no-cache",
+            "--fail-on-violation",
+            "false",
+            "-language",
+            "plsql",
+            "-d",
+            "/home/kali/vuln-app/DVWA",
+            "-r",
+            "/home/kali/dvwa-report/source-sql-report.csv",
+            "-f",
+            "csv",
+            "-R",
+            "/tmp/.mount_sastscGf5SBR/usr/src/tools_config/rules-pmd.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "/tmp/.mount_sastscGf5SBR/opt/pmd-bin/bin/run.sh pmd --no-cache --fail-on-violation false -language plsql -d /home/kali/vuln-app/DVWA -r /home/kali/dvwa-report/source-sql-report.csv -f csv -R /tmp/.mount_sastscGf5SBR/usr/src/tools_config/rules-pmd.xml",
+          "endTimeUtc": "2025-01-29T17:04:57Z",
+          "workingDirectory": {
+            "uri": "https://github.com/digininja/DVWA/blob/55d152ae6496a0e1af71b8d434fc588065b32489"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2025-01-29T17:04:57Z",
+          "workingDirectory": {
+            "uri": "https://github.com/digininja/DVWA/blob/55d152ae6496a0e1af71b8d434fc588065b32489"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "9e5acede-44e2-47af-99c2-bf73424ac56d"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "master",
+          "repositoryUri": "https://github.com/digininja/DVWA",
+          "revisionId": "55d152ae6496a0e1af71b8d434fc588065b32489"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "9e5acede-44e2-47af-99c2-bf73424ac56d",
+      "runGuid": "7d5f84fc-4554-45ef-b3c8-fde88cde0c40"
+    }
+  ]
+}

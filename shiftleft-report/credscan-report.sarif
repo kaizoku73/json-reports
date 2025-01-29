@@ -1,0 +1,143 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Secrets Audit",
+          "rules": [
+            {
+              "id": "CWE-312",
+              "help": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information.",
+                "markdown": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information."
+              },
+              "name": "Env Var",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/312.html",
+              "shortDescription": {
+                "text": "Cleartext Storage of Sensitive Information."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Secrets Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "--config-path=/tmp/.mount_sastscGf5SBR/usr/src/tools_config/credscan-config.toml",
+            "--path=/home/kali/vuln-app/DVWA",
+            "--leaks-exit-code=0",
+            "--no-git",
+            "--report=/home/kali/dvwa-report/credscan-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "--config-path=/tmp/.mount_sastscGf5SBR/usr/src/tools_config/credscan-config.toml --path=/home/kali/vuln-app/DVWA --leaks-exit-code=0 --no-git --report=/home/kali/dvwa-report/credscan-report.json",
+          "endTimeUtc": "2025-01-29T17:04:58Z",
+          "workingDirectory": {
+            "uri": "https://github.com/digininja/DVWA/blob/55d152ae6496a0e1af71b8d434fc588065b32489"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2025-01-29T17:04:58Z",
+          "workingDirectory": {
+            "uri": "https://github.com/digininja/DVWA/blob/55d152ae6496a0e1af71b8d434fc588065b32489"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 1,
+          "critical": 0,
+          "high": 1,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine: $_DVWA[ 'db_password' ] = getenv('DB_PASSWORD') ?: 'p@ssw0rd';\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "$_DVWA[ 'db_password' ] = getenv('DB_PASSWORD') ?: 'p@ssw0rd';"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/digininja/DVWA/blob/55d152ae6496a0e1af71b8d434fc588065b32489/config/config.inc.php.dist"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "$_DVWA[ 'db_password' ] = getenv('DB_PASSWORD') ?: 'p@ssw0rd';"
+                  },
+                  "endLine": 1,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "43e13a3715225a41",
+            "scanFileHash": "32e7acbf43194a44"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "c6d8fd84-b941-4149-bfa2-2e4639916950"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "master",
+          "repositoryUri": "https://github.com/digininja/DVWA",
+          "revisionId": "55d152ae6496a0e1af71b8d434fc588065b32489"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "c6d8fd84-b941-4149-bfa2-2e4639916950",
+      "runGuid": "7d5f84fc-4554-45ef-b3c8-fde88cde0c40"
+    }
+  ]
+}
