@@ -1,0 +1,4146 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Flawfinder",
+          "version": "2.0.19",
+          "informationUri": "https://dwheeler.com/flawfinder/",
+          "rules": [
+            {
+              "id": "FF1013",
+              "name": "buffer/char",
+              "shortDescription": {
+                "text": "Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/119.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-119",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "incomparable"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1040",
+              "name": "misc/fopen",
+              "shortDescription": {
+                "text": "Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-362",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1016",
+              "name": "format/printf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1070",
+              "name": "input/fread",
+              "shortDescription": {
+                "text": "Function accepts input from outside program (CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1004",
+              "name": "buffer/memcpy",
+              "shortDescription": {
+                "text": "Does not check for buffer overflows when copying to destination (CWE-120)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1017",
+              "name": "format/fprintf",
+              "shortDescription": {
+                "text": "If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/134.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-134",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1029",
+              "name": "buffer/read",
+              "shortDescription": {
+                "text": "Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/120.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-120",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                },
+                {
+                  "target": {
+                    "id": "CWE-20",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FF1022",
+              "name": "buffer/strlen",
+              "shortDescription": {
+                "text": "Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/126.html",
+              "relationships": [
+                {
+                  "target": {
+                    "id": "CWE-126",
+                    "toolComponent": {
+                      "name": "CWE",
+                      "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+                    }
+                  },
+                  "kinds": [
+                    "relevant"
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+            }
+          ]
+        }
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "\tchar buff[0x1000];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18691aac887d73cba458e2875ca09be3dc6dea1f90bfdbe10fd6ea2585212e4b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 4,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 4,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "\t\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 7,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    \t\tfprintf(stderr, \"no input file\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "21abae5d8936cb36d58191fea95e5cff977d5582d783921a21cb61d2dc2fff4a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 2,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "\tchar buffer[1024] = {0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b47e974ab2372f2bc7a8c0d53da288c4146b8f58e0599786cd9b450b279b23e8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1029",
+          "level": "note",
+          "message": {
+            "text": "buffer/read:Check buffer boundaries if used in a loop including recursive loops (CWE-120, CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 12,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "\tvalread = read( new_socket , buffer, 1024);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f15a75f7bc1ebf61efead9c1ebae66e836af2f27a76007cb504db3b2819c4f0c"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 2,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "\tprintf(\"%s\\n\",buffer );"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f6dbda291db576b40a5a2adb072f9515ab6f7f0d00f614deda6b43602cfea779"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 2,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 2,
+                  "endColumn": 80,
+                  "snippet": {
+                    "text": "\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img->header,img->width,img->height,img->data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "931cb03a93d5919557cb7ef5201a5f45f05565eb39b06d1ab5acd73ae61a89e6"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 2,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\tmemcpy(buff1,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "65610f0cf98bf9279784d85f6db09ed2eb6ee6c58332fceac176f3d98fa3ab5a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 2,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\tmemcpy(buff2,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2c162f67b899077ac5b2db69ec5abc397f41d3f45d62d937be60ada9629987a0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_socket.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 2,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\tmemcpy(buff4,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1de5e4ab905a48ec7b318d96de65996fe718e2ec2dfe4af72a8b466a09355e7b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_libfuzzer.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_libfuzzer.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_libfuzzer.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 3,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff1,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "65610f0cf98bf9279784d85f6db09ed2eb6ee6c58332fceac176f3d98fa3ab5a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_libfuzzer.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 3,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff2,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2c162f67b899077ac5b2db69ec5abc397f41d3f45d62d937be60ada9629987a0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_libfuzzer.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead_libfuzzer.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 3,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff4,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1de5e4ab905a48ec7b318d96de65996fe718e2ec2dfe4af72a8b466a09355e7b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "\tchar buff[0x1000];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18691aac887d73cba458e2875ca09be3dc6dea1f90bfdbe10fd6ea2585212e4b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 4,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 4,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "\t\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 7,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    \t\tfprintf(stderr, \"no input file\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "21abae5d8936cb36d58191fea95e5cff977d5582d783921a21cb61d2dc2fff4a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "\tchar buff[0x1000];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18691aac887d73cba458e2875ca09be3dc6dea1f90bfdbe10fd6ea2585212e4b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 4,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 4,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "\t\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 5,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "    char header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/linux/Damn_Vulnerable_C_lib/imgReadlib.h",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 5,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "    char data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 3,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 3,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_git/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "\tchar buff[0x1000];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18691aac887d73cba458e2875ca09be3dc6dea1f90bfdbe10fd6ea2585212e4b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 4,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 4,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "\t\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead_replication.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1022",
+          "level": "note",
+          "message": {
+            "text": "buffer/strlen:Does not handle strings that are not \\0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 11,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "\tbufsize =strlen(shmem_buf); "
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1f3223bc7e9fee7ab8f016a7d9343815d7e50efae0fd3110f4d640af636f1335"
+          },
+          "rank": 0.2
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 2,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "\tprintf(\"input: %s\\n\", shmem_buf);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "b78c90fa7deed7176a8d9a966b83f280a0c8c781ca11076502c7efc37f125f76"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 2,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\tmemcpy(buff1,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "65610f0cf98bf9279784d85f6db09ed2eb6ee6c58332fceac176f3d98fa3ab5a"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 2,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\tmemcpy(buff2,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "2c162f67b899077ac5b2db69ec5abc397f41d3f45d62d937be60ada9629987a0"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/damn_vulnerable_c_program_shmem/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 2,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\tmemcpy(buff4,img->data,sizeof(img->data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "1de5e4ab905a48ec7b318d96de65996fe718e2ec2dfe4af72a8b466a09355e7b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 3,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 3,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/libAFL/libafl_forkserver_fuzzer/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "\tchar buff[0x1000];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "18691aac887d73cba458e2875ca09be3dc6dea1f90bfdbe10fd6ea2585212e4b"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 4,
+                  "endColumn": 78,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 4,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "\t\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 4,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "\t\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1017",
+          "level": "note",
+          "message": {
+            "text": "format/fprintf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/imgRead.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 7,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "    \t\tfprintf(stderr, \"no input file\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "21abae5d8936cb36d58191fea95e5cff977d5582d783921a21cb61d2dc2fff4a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endColumn": 17,
+                  "snippet": {
+                    "text": "\tchar header[4];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "e244f3f09624dd68be7f1b6dc3a22f09b478956d40c770d1eed210ff7fc1dcde"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endColumn": 16,
+                  "snippet": {
+                    "text": "\tchar data[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7184a73b8f71839464763390616f39005a0324780a56b5967e41f2785ab81aa8"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1040",
+          "level": "note",
+          "message": {
+            "text": "misc/fopen:Check when opening files - can an attacker redirect it (via symlinks), force the opening of special file type (e.g., device files), move things around to create a race condition, control its ancestors, or change its contents? (CWE-362)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 7,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\tfp = fopen(filename,\"r\");            //Statement   1"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "66c4a2b05be02bd0f6bb781c6900047c645b6ac2a7f04267c81111a28607b391"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 3,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\nCan't open file or file doesn't exist.\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "df1140c85626d0cdec44db854e1f0797a346dd0c810db8cc8f38d2ea0ebb4c01"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1070",
+          "level": "note",
+          "message": {
+            "text": "input/fread:Function accepts input from outside program (CWE-20)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 8,
+                  "endColumn": 39,
+                  "snippet": {
+                    "text": "\twhile(fread(&img,sizeof(img),1,fp)>0)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "24e250445eed07060dff0c11f5ee5bcbe98890b0ac7f6f8ceae2ba3cacc1cda5"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 3,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\n\\tHeader\\twidth\\theight\\tdata\\t\\r\\n\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "5b54964b0ae2a34ee086d7f7e2bfec36a0d096629e1fe9728cc0fc274b47a3e9"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 3,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "\t\tprintf(\"\\n\\t%s\\t%d\\t%d\\t%s\\r\\n\",img.header,img.width,img.height,img.data);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "113d42109d5566ca6e1cf5ae09f86461444beb1b04a18ff23edba032c7cc7541"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 4,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error!Large value of size1 detected!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fa99da3ec6eec5def36ff43dc391e91bf6b7e845cc21460b47cabb04ac23ddab"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 4,
+                  "endColumn": 46,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"error! buffer alocation failed!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "596440c8a99e569e96f59ce59acf91933483d2c8b533941b271a21124d50a507"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error!, not eough memory to copy data\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "7ebc5e65e6ec767d1278d26e8c040baecd93c35f3187d71350a4abfd0f399162"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff1,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "c8be253064ce2e614160d89fe393fe3e8d1dd77ff6d6ebe28bef0c19c91f20df"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 6,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "\t\t\t\t\tprintf(\"Error! Buffer is already freed!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "4386a3e4337666a8b1dbad67de8c150017120bd9ce8690f4c98ca0c16c2bfff2"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 4,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error! Memory allocation failed!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "515994c8c5da8814e68071749d7fea0f0849c05a4700f346784a8b24dc96826e"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 4,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Errr!, not enugh emmory to copy data!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6f0312b49a3bdb6bfa72e28cbc2bbd06afec630d003eeb3f906cde0b776fe508"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff2,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "36061b08ebc7bc62d71b6846a1f6ddeec2e76ce7fea491a98f6ddc5d18242785"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 4,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error! Image Height is zero!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "58e0744986542621b8646e4c03bc6f26fa7147f48c16769815e05671ca1d5c2a"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1013",
+          "level": "note",
+          "message": {
+            "text": "buffer/char:Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 3,
+                  "endColumn": 18,
+                  "snippet": {
+                    "text": "\t\tchar buff3[10];"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "eb247b5282dddce0383295810ebcf01424591fd22a6b232610466449a72cc3ec"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 4,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error!, Memory allocation failed.\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "6191a1056d0fa17e98e747a7b17e366cd2cffe65e38d020e571283420781beca"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 4,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error!, not enouggh memoy to copy data!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "fa356ce5f87ee378932c317a27e93bc7dad4b89a1bb8a14f1e0c00fc846d8c14"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1004",
+          "level": "note",
+          "message": {
+            "text": "buffer/memcpy:Does not check for buffer overflows when copying to destination (CWE-120)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 3,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "\t\tmemcpy(buff4,img.data,sizeof(img.data));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "f765bb0b6382c8f2428a1535ea195a2063038eb8824d3d123dbc0129f38dc506"
+          },
+          "rank": 0.4
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 4,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error! memory acess beynd allowed size detected!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "a467b48be2ca263e689443dfc056791f1beae12e94f4f1549fdc6184e7d4372b"
+          },
+          "rank": 0.0
+        },
+        {
+          "ruleId": "FF1016",
+          "level": "note",
+          "message": {
+            "text": "format/printf:If format strings can be influenced by an attacker, they can be exploited (CWE-134)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program/dvcp_patched.c",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 4,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "\t\t\tprintf(\"Error! memory acess beyond alowed size detected!\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "contextHash/v1": "88e58d88f353b662d48def6b72143f34c1b6bdadf4ad763740201f2c8c99812d"
+          },
+          "rank": 0.0
+        }
+      ],
+      "externalPropertyFileReferences": {
+        "taxonomies": [
+          {
+            "location": {
+              "uri": "https://raw.githubusercontent.com/sarif-standard/taxonomies/main/CWE_v4.4.sarif"
+            },
+            "guid": "FFC64C90-42B6-44CE-8BEB-F6B7DAE649E5"
+          }
+        ]
+      }
+    }
+  ]
+}
