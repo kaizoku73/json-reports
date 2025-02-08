@@ -1,0 +1,3386 @@
+{
+  "$schema": "https:\/\/docs.oasis-open.org\/sarif\/sarif\/v2.1.0\/errata01\/os\/schemas\/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 29,
+                  "startColumn": 24,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 111,
+                  "startColumn": 11,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff5' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 90,
+                  "startColumn": 16,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 23,
+                  "startColumn": 7,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: buff"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 90,
+                  "startColumn": 14,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 91,
+                  "startColumn": 19,
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 94,
+                  "startColumn": 16,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp.c"
+                },
+                "region": {
+                  "endColumn": 10,
+                  "endLine": 99,
+                  "startColumn": 10,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 0,
+                  "startColumn": 0,
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches."
+          },
+          "ruleId": "normalCheckLevelMaxBranches"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 9,
+                  "endLine": 69,
+                  "startColumn": 9,
+                  "startLine": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 13,
+                  "endLine": 78,
+                  "startColumn": 13,
+                  "startLine": 78
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Condition 'buff1==NULL' is always true"
+          },
+          "ruleId": "knownConditionTrueFalse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 23,
+                  "endLine": 127,
+                  "startColumn": 23,
+                  "startLine": 127
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 134,
+                  "startColumn": 11,
+                  "startLine": 134
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Condition 'size3>9' is always true"
+          },
+          "ruleId": "knownConditionTrueFalse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 13,
+                  "endLine": 146,
+                  "startColumn": 13,
+                  "startLine": 146
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 147,
+                  "startColumn": 11,
+                  "startLine": 147
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Condition 'size4>size3' is always true"
+          },
+          "ruleId": "knownConditionTrueFalse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 42,
+                  "startColumn": 3,
+                  "startLine": 42
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "ruleId": "invalidPrintfArgType_sint"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 42,
+                  "startColumn": 3,
+                  "startLine": 42
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "%d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'."
+          },
+          "ruleId": "invalidPrintfArgType_sint"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 22,
+                  "startColumn": 24,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 142,
+                  "startColumn": 14,
+                  "startLine": 142
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 143,
+                  "startColumn": 16,
+                  "startLine": 143
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 154,
+                  "startColumn": 19,
+                  "startLine": 154
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 9,
+                  "endLine": 164,
+                  "startColumn": 9,
+                  "startLine": 164
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/dvcp_patched.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 24,
+                  "startColumn": 7,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: ch"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 29,
+                  "startColumn": 24,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 111,
+                  "startColumn": 11,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff5' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 90,
+                  "startColumn": 16,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 23,
+                  "startColumn": 7,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: buff"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 90,
+                  "startColumn": 14,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 91,
+                  "startColumn": 19,
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 94,
+                  "startColumn": 16,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 10,
+                  "endLine": 99,
+                  "startColumn": 10,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 22,
+                  "startColumn": 24,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 15,
+                  "endLine": 84,
+                  "startColumn": 15,
+                  "startLine": 84
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 13,
+                  "endLine": 84,
+                  "startColumn": 13,
+                  "startLine": 84
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 18,
+                  "endLine": 85,
+                  "startColumn": 18,
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 15,
+                  "endLine": 88,
+                  "startColumn": 15,
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 9,
+                  "endLine": 93,
+                  "startColumn": 9,
+                  "startLine": 93
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_git\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 24,
+                  "startColumn": 7,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: ch"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 2,
+                  "endLine": 53,
+                  "startColumn": 2,
+                  "startLine": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 56,
+                  "startColumn": 3,
+                  "startLine": 56
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Memory pointed to by 'buff1' is freed twice."
+          },
+          "ruleId": "doubleFree"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 4,
+                  "endLine": 61,
+                  "startColumn": 4,
+                  "startLine": 61
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Dereferencing 'buff1' after it is deallocated \/ released"
+          },
+          "ruleId": "deallocuse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 92,
+                  "startColumn": 3,
+                  "startLine": 92
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Memory leak: buff4"
+          },
+          "ruleId": "memleak"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 30,
+                  "startColumn": 16,
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'img' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 20,
+                  "endLine": 82,
+                  "startColumn": 20,
+                  "startLine": 82
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 18,
+                  "endLine": 82,
+                  "startColumn": 18,
+                  "startLine": 82
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_stack' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 17,
+                  "endLine": 84,
+                  "startColumn": 17,
+                  "startLine": 84
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 87,
+                  "startColumn": 14,
+                  "startLine": 87
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 8,
+                  "endLine": 92,
+                  "startColumn": 8,
+                  "startLine": 92
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 8,
+                  "endLine": 28,
+                  "startColumn": 8,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: fp"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 29,
+                  "startColumn": 7,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: ch"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 29,
+                  "startColumn": 24,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 111,
+                  "startColumn": 11,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff5' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 90,
+                  "startColumn": 16,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 23,
+                  "startColumn": 7,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: buff"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 90,
+                  "startColumn": 14,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 91,
+                  "startColumn": 19,
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 94,
+                  "startColumn": 16,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/damn_vulnerable_c_program_shmem\/imgRead_replication.c"
+                },
+                "region": {
+                  "endColumn": 10,
+                  "endLine": 99,
+                  "startColumn": 10,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 22,
+                  "startColumn": 24,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 15,
+                  "endLine": 84,
+                  "startColumn": 15,
+                  "startLine": 84
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 13,
+                  "endLine": 84,
+                  "startColumn": 13,
+                  "startLine": 84
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 18,
+                  "endLine": 85,
+                  "startColumn": 18,
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 15,
+                  "endLine": 88,
+                  "startColumn": 15,
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 9,
+                  "endLine": 93,
+                  "startColumn": 9,
+                  "startLine": 93
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/libAFL\/libafl_forkserver_fuzzer\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 24,
+                  "startColumn": 7,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: ch"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 29,
+                  "startColumn": 24,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 111,
+                  "startColumn": 11,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff5' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 90,
+                  "startColumn": 16,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 23,
+                  "startColumn": 7,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: buff"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 90,
+                  "startColumn": 14,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 91,
+                  "startColumn": 19,
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 94,
+                  "startColumn": 16,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/Damn_Vulnerable_C_lib\/imgReadlib.c"
+                },
+                "region": {
+                  "endColumn": 10,
+                  "endLine": 99,
+                  "startColumn": 10,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 24,
+                  "endLine": 29,
+                  "startColumn": 24,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Parameter 'filename' can be declared as pointer to const"
+          },
+          "ruleId": "constParameterPointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 111,
+                  "startColumn": 11,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff5' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 90,
+                  "startColumn": 16,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 7,
+                  "endLine": 23,
+                  "startColumn": 7,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unused variable: buff"
+          },
+          "ruleId": "unusedVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 90,
+                  "startColumn": 14,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 91,
+                  "startColumn": 19,
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 94,
+                  "startColumn": 16,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead.c"
+                },
+                "region": {
+                  "endColumn": 10,
+                  "endLine": 99,
+                  "startColumn": 10,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 10,
+                  "startColumn": 0,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 13,
+                  "startColumn": 0,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 4,
+                  "endLine": 80,
+                  "startColumn": 4,
+                  "startLine": 80
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Found an exit path from function with non-void return type that has missing return statement"
+          },
+          "ruleId": "missingReturn"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 36,
+                  "startColumn": 3,
+                  "startLine": 36
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 4,
+                  "endLine": 39,
+                  "startColumn": 4,
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Memory pointed to by 'buff1' is freed twice."
+          },
+          "ruleId": "doubleFree"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 5,
+                  "endLine": 44,
+                  "startColumn": 5,
+                  "startLine": 44
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Dereferencing 'buff1' after it is deallocated \/ released"
+          },
+          "ruleId": "deallocuse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 4,
+                  "endLine": 77,
+                  "startColumn": 4,
+                  "startLine": 77
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Memory leak: buff4"
+          },
+          "ruleId": "memleak"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 26,
+                  "startColumn": 16,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'img' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 21,
+                  "endLine": 67,
+                  "startColumn": 21,
+                  "startLine": 67
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 19,
+                  "endLine": 67,
+                  "startColumn": 19,
+                  "startLine": 67
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_stack' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 18,
+                  "endLine": 69,
+                  "startColumn": 18,
+                  "startLine": 69
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 15,
+                  "endLine": 72,
+                  "startColumn": 15,
+                  "startLine": 72
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 9,
+                  "endLine": 77,
+                  "startColumn": 9,
+                  "startLine": 77
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 11,
+                  "startColumn": 0,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 12,
+                  "startColumn": 0,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 13,
+                  "startColumn": 0,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 14,
+                  "startColumn": 0,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <sys\/socket.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 15,
+                  "startColumn": 0,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <arpa\/inet.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 16,
+                  "startColumn": 0,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <unistd.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 18,
+                  "startColumn": 0,
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <pthread.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 0,
+                  "startColumn": 0,
+                  "startLine": 0
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches."
+          },
+          "ruleId": "normalCheckLevelMaxBranches"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 2,
+                  "endLine": 103,
+                  "startColumn": 2,
+                  "startLine": 103
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 106,
+                  "startColumn": 3,
+                  "startLine": 106
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Memory pointed to by 'buff1' is freed twice."
+          },
+          "ruleId": "doubleFree"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 4,
+                  "endLine": 111,
+                  "startColumn": 4,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Dereferencing 'buff1' after it is deallocated \/ released"
+          },
+          "ruleId": "deallocuse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 3,
+                  "endLine": 143,
+                  "startColumn": 3,
+                  "startLine": 143
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Memory leak: buff4"
+          },
+          "ruleId": "memleak"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 8,
+                  "endLine": 36,
+                  "startColumn": 8,
+                  "startLine": 36
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'hello' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 16,
+                  "endLine": 85,
+                  "startColumn": 16,
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'img' can be declared as pointer to const"
+          },
+          "ruleId": "constVariablePointer"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 134,
+                  "startColumn": 14,
+                  "startLine": 134
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Uninitialized variable: buff3"
+          },
+          "ruleId": "legacyUninitvar"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 36,
+                  "startColumn": 14,
+                  "startLine": 36
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'hello' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 12,
+                  "endLine": 134,
+                  "startColumn": 12,
+                  "startLine": 134
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 17,
+                  "endLine": 135,
+                  "startColumn": 17,
+                  "startLine": 135
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'OOBR_heap' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 14,
+                  "endLine": 138,
+                  "startColumn": 14,
+                  "startLine": 138
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff3[size3]' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_socket.c"
+                },
+                "region": {
+                  "endColumn": 8,
+                  "endLine": 143,
+                  "startColumn": 8,
+                  "startLine": 143
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Variable 'buff4' is assigned a value that is never used."
+          },
+          "ruleId": "unreadVariable"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/windows\/HarnessForWindowsDLL\/dllTest2\/dllTest2.cpp"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 4,
+                  "startColumn": 0,
+                  "startLine": 4
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+          },
+          "ruleId": "missingIncludeSystem"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Damn_Vulnerable_C_Program\/linux\/imgRead_libfuzzer.c"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 22,
+                  "startColumn": 0,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "The function 'LLVMFuzzerTestOneInput' is never used."
+          },
+          "ruleId": "unusedFunction"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https:\/\/cppcheck.sourceforge.io",
+          "name": "Cppcheck",
+          "rules": [
+            {
+              "fullDescription": {
+                "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+              },
+              "help": {
+                "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+              },
+              "id": "missingIncludeSystem",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Parameter 'filename' can be declared as pointer to const"
+              },
+              "help": {
+                "text": "Parameter 'filename' can be declared as pointer to const"
+              },
+              "id": "constParameterPointer",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Parameter 'filename' can be declared as pointer to const"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Variable 'buff5' can be declared as pointer to const"
+              },
+              "help": {
+                "text": "Variable 'buff5' can be declared as pointer to const"
+              },
+              "id": "constVariablePointer",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Variable 'buff5' can be declared as pointer to const"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Uninitialized variable: buff3"
+              },
+              "help": {
+                "text": "Uninitialized variable: buff3"
+              },
+              "id": "legacyUninitvar",
+              "properties": {
+                "precision": "high",
+                "security-severity": 9.9000000000000004,
+                "tags": [
+                  "security"
+                ]
+              },
+              "shortDescription": {
+                "text": "Uninitialized variable: buff3"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Unused variable: buff"
+              },
+              "help": {
+                "text": "Unused variable: buff"
+              },
+              "id": "unusedVariable",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Unused variable: buff"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Variable 'OOBR' is assigned a value that is never used."
+              },
+              "help": {
+                "text": "Variable 'OOBR' is assigned a value that is never used."
+              },
+              "id": "unreadVariable",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Variable 'OOBR' is assigned a value that is never used."
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches."
+              },
+              "help": {
+                "text": "Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches."
+              },
+              "id": "normalCheckLevelMaxBranches",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches."
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Condition 'buff1==NULL' is always true"
+              },
+              "help": {
+                "text": "Condition 'buff1==NULL' is always true"
+              },
+              "id": "knownConditionTrueFalse",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "Condition 'buff1==NULL' is always true"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+              },
+              "help": {
+                "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+              },
+              "id": "invalidPrintfArgType_sint",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Memory pointed to by 'buff1' is freed twice."
+              },
+              "help": {
+                "text": "Memory pointed to by 'buff1' is freed twice."
+              },
+              "id": "doubleFree",
+              "properties": {
+                "precision": "high",
+                "security-severity": 9.9000000000000004,
+                "tags": [
+                  "security"
+                ]
+              },
+              "shortDescription": {
+                "text": "Memory pointed to by 'buff1' is freed twice."
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Dereferencing 'buff1' after it is deallocated \/ released"
+              },
+              "help": {
+                "text": "Dereferencing 'buff1' after it is deallocated \/ released"
+              },
+              "id": "deallocuse",
+              "properties": {
+                "precision": "high",
+                "security-severity": 9.9000000000000004,
+                "tags": [
+                  "security"
+                ]
+              },
+              "shortDescription": {
+                "text": "Dereferencing 'buff1' after it is deallocated \/ released"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Memory leak: buff4"
+              },
+              "help": {
+                "text": "Memory leak: buff4"
+              },
+              "id": "memleak",
+              "properties": {
+                "precision": "high",
+                "security-severity": 9.9000000000000004,
+                "tags": [
+                  "security"
+                ]
+              },
+              "shortDescription": {
+                "text": "Memory leak: buff4"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "Found an exit path from function with non-void return type that has missing return statement"
+              },
+              "help": {
+                "text": "Found an exit path from function with non-void return type that has missing return statement"
+              },
+              "id": "missingReturn",
+              "properties": {
+                "precision": "high",
+                "security-severity": 9.9000000000000004,
+                "tags": [
+                  "security"
+                ]
+              },
+              "shortDescription": {
+                "text": "Found an exit path from function with non-void return type that has missing return statement"
+              }
+            },
+            {
+              "fullDescription": {
+                "text": "The function 'LLVMFuzzerTestOneInput' is never used."
+              },
+              "help": {
+                "text": "The function 'LLVMFuzzerTestOneInput' is never used."
+              },
+              "id": "unusedFunction",
+              "properties": {
+                "precision": "high"
+              },
+              "shortDescription": {
+                "text": "The function 'LLVMFuzzerTestOneInput' is never used."
+              }
+            }
+          ],
+          "semanticVersion": "2.16.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}
+
