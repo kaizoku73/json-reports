@@ -1,0 +1,344 @@
+{
+  "errors": [],
+  "njsscan_version": "0.4.3",
+  "nodejs": {
+    "cookie_session_default": {
+      "files": [
+        {
+          "file_path": "dvna/server.js",
+          "match_lines": [
+            23,
+            28
+          ],
+          "match_position": [
+            9,
+            3
+          ],
+          "match_string": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-522: Insufficiently Protected Credentials",
+        "description": "Consider changing the default session cookie name. An attacker can use it to fingerprint the server and target attacks accordingly.",
+        "owasp-web": "A2: Broken Authentication",
+        "severity": "INFO"
+      }
+    },
+    "cookie_session_no_domain": {
+      "files": [
+        {
+          "file_path": "dvna/server.js",
+          "match_lines": [
+            23,
+            28
+          ],
+          "match_position": [
+            9,
+            3
+          ],
+          "match_string": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-522: Insufficiently Protected Credentials",
+        "description": "Default session middleware settings: `domain` not set. It indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.",
+        "owasp-web": "A2: Broken Authentication",
+        "severity": "INFO"
+      }
+    },
+    "cookie_session_no_maxage": {
+      "files": [
+        {
+          "file_path": "dvna/server.js",
+          "match_lines": [
+            23,
+            28
+          ],
+          "match_position": [
+            9,
+            3
+          ],
+          "match_string": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-613: Insufficient Session Expiration",
+        "description": "Session middleware settings: `maxAge` not set. Use it to set expiration date for cookies.",
+        "owasp-web": "A2: Broken Authentication",
+        "severity": "INFO"
+      }
+    },
+    "cookie_session_no_path": {
+      "files": [
+        {
+          "file_path": "dvna/server.js",
+          "match_lines": [
+            23,
+            28
+          ],
+          "match_position": [
+            9,
+            3
+          ],
+          "match_string": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-522: Insufficiently Protected Credentials",
+        "description": "Default session middleware settings: `path` not set. It indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.",
+        "owasp-web": "A2: Broken Authentication",
+        "severity": "INFO"
+      }
+    },
+    "cookie_session_no_samesite": {
+      "files": [
+        {
+          "file_path": "dvna/server.js",
+          "match_lines": [
+            23,
+            28
+          ],
+          "match_position": [
+            9,
+            3
+          ],
+          "match_string": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+        }
+      ],
+      "metadata": {
+        "cwe": "cwe-1275",
+        "description": "Default session middleware settings: `sameSite` attribute is not configured to strict or lax. These configurations provides protection against Cross Site Request Forgery attacks.",
+        "owasp-web": "A2: Broken Authentication",
+        "severity": "WARNING"
+      }
+    },
+    "cookie_session_no_secure": {
+      "files": [
+        {
+          "file_path": "dvna/server.js",
+          "match_lines": [
+            23,
+            28
+          ],
+          "match_position": [
+            9,
+            3
+          ],
+          "match_string": "app.use(session({\n  secret: 'keyboard cat',\n  resave: true,\n  saveUninitialized: true,\n  cookie: { secure: false }\n}))"
+        }
+      ],
+      "metadata": {
+        "cwe": "cwe-614",
+        "description": "Default session middleware settings: `secure` not set. It ensures the browser only sends the cookie over HTTPS.",
+        "owasp-web": "A2: Broken Authentication",
+        "severity": "WARNING"
+      }
+    },
+    "express_lfr_warning": {
+      "files": [
+        {
+          "file_path": "dvna/routes/app.js",
+          "match_lines": [
+            23,
+            23
+          ],
+          "match_position": [
+            9,
+            65
+          ],
+          "match_string": "        res.render('app/bulkproducts',{legacy:req.query.legacy})"
+        },
+        {
+          "file_path": "dvna/routes/app.js",
+          "match_lines": [
+            37,
+            39
+          ],
+          "match_position": [
+            9,
+            11
+          ],
+          "match_string": "        res.render('app/admin', {\n            admin: (req.user.role == 'admin')\n        })"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-23: Relative Path Traversal",
+        "description": "Untrusted user input in express render() function can result in arbitrary file read if hbs templating is used.",
+        "owasp-web": "A5: Broken Access Control",
+        "severity": "WARNING"
+      }
+    },
+    "express_open_redirect": {
+      "files": [
+        {
+          "file_path": "dvna/core/appHandler.js",
+          "match_lines": [
+            188,
+            188
+          ],
+          "match_position": [
+            3,
+            30
+          ],
+          "match_string": "\t\tres.redirect(req.query.url)"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')",
+        "description": "Untrusted user input in redirect() can result in Open Redirect vulnerability. An http parameter may contain a URL value and could cause the web application to redirect the request to the specified URL. By modifying the URL value to a malicious site, an attacker may successfully launch a phishing scam and steal user credentials. Because the server name in the modified link is identical to the original site, phishing attempts have a more trustworthy appearance. Whether this issue poses a vulnerability will be subject to the intended behavior of the application. For example, a search engine might intentionally provide redirects to arbitrary URLs.",
+        "owasp-web": "A1: Injection",
+        "severity": "ERROR"
+      }
+    },
+    "node_deserialize": {
+      "files": [
+        {
+          "file_path": "dvna/core/appHandler.js",
+          "match_lines": [
+            218,
+            218
+          ],
+          "match_position": [
+            18,
+            81
+          ],
+          "match_string": "\t\tvar products = serialize.unserialize(req.files.products.data.toString('utf8'))"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-502: Deserialization of Untrusted Data",
+        "description": "User controlled data in 'unserialize()' or 'deserialize()' function can result in Object Injection or Remote Code Injection.",
+        "owasp-web": "A8: Insecure Deserialization",
+        "severity": "ERROR"
+      }
+    },
+    "node_xxe": {
+      "files": [
+        {
+          "file_path": "dvna/core/appHandler.js",
+          "match_lines": [
+            235,
+            235
+          ],
+          "match_position": [
+            18,
+            111
+          ],
+          "match_string": "\t\tvar products = libxmljs.parseXmlString(req.files.products.data.toString('utf8'), {noent:true,noblanks:true})"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-611: Improper Restriction of XML External Entity Reference",
+        "description": "User controlled data in XML parsers can result in XML External or Internal Entity (XXE) Processing vulnerabilities",
+        "owasp-web": "A4: XML External Entities (XXE)",
+        "severity": "ERROR"
+      }
+    },
+    "sequelize_tls": {
+      "files": [
+        {
+          "file_path": "dvna/config/db.js",
+          "match_lines": [
+            1,
+            8
+          ],
+          "match_position": [
+            18,
+            2
+          ],
+          "match_string": "module.exports = {\n  username: process.env.MYSQL_USER,\n  password: process.env.MYSQL_PASSWORD,\n  database: process.env.MYSQL_DATABASE,\n  host: process.env.MYSQL_HOST || 'mysql-db',\n  port: process.env.MYSQL_PORT || 3306,\n  dialect: 'mysql'\n}"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-319: Cleartext Transmission of Sensitive Information",
+        "description": "The Sequelize connection string indicates that database server does not use TLS. Non TLS connections are susceptible to man in the middle (MITM) attacks.\n",
+        "owasp-web": "A6: Security Misconfiguration",
+        "severity": "WARNING"
+      }
+    }
+  },
+  "templates": {
+    "ejs_ect_template": {
+      "files": [
+        {
+          "file_path": "dvna/views/app/products.ejs",
+          "match_lines": [
+            51,
+            51
+          ],
+          "match_position": [
+            1907,
+            1937
+          ],
+          "match_string": "<%- output.products[i].code %>"
+        },
+        {
+          "file_path": "dvna/views/app/products.ejs",
+          "match_lines": [
+            53,
+            53
+          ],
+          "match_position": [
+            2019,
+            2056
+          ],
+          "match_string": "<%- output.products[i].description %>"
+        },
+        {
+          "file_path": "dvna/views/app/products.ejs",
+          "match_lines": [
+            49,
+            49
+          ],
+          "match_position": [
+            1797,
+            1825
+          ],
+          "match_string": "<%- output.products[i].id %>"
+        },
+        {
+          "file_path": "dvna/views/app/products.ejs",
+          "match_lines": [
+            50,
+            50
+          ],
+          "match_position": [
+            1851,
+            1881
+          ],
+          "match_string": "<%- output.products[i].name %>"
+        },
+        {
+          "file_path": "dvna/views/app/products.ejs",
+          "match_lines": [
+            52,
+            52
+          ],
+          "match_position": [
+            1963,
+            1993
+          ],
+          "match_string": "<%- output.products[i].tags %>"
+        },
+        {
+          "file_path": "dvna/views/app/products.ejs",
+          "match_lines": [
+            20,
+            20
+          ],
+          "match_position": [
+            721,
+            745
+          ],
+          "match_string": "<%- output.searchTerm %>"
+        }
+      ],
+      "metadata": {
+        "cwe": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "description": "The EJS/ECT template has an unescaped variable. Untrusted user input passed to this variable results in Cross Site Scripting (XSS).",
+        "owasp-web": "A1: Injection",
+        "severity": "ERROR"
+      }
+    }
+  }
+}
